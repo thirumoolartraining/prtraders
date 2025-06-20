@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Clock, Send, User, MessageSquare, Building } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Clock, Send, MessageSquare, Building } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useContactMessages } from '../hooks/useContactMessages';
 import toast from 'react-hot-toast';
@@ -203,7 +203,7 @@ const ContactUs = () => {
                   <Mail className="text-forest-green mt-1" size={18} />
                   <div>
                     <p className="font-medium text-charcoal">Email</p>
-                    <p className="text-charcoal/80">📧 info@prtraders.com</p>
+                    <p className="text-charcoal/80">📧 info@prtraders.shop</p>
                     <p className="text-xs text-charcoal/60">Expect a response within 24–48 business hours</p>
                   </div>
                 </div>

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { ArrowLeft, Package, Calculator, Clock, Shield, CheckCircle, Star, Users, Globe, Award, Send, User, Building, MessageSquare } from 'lucide-react';
+import { ArrowLeft, Package, Calculator, Clock, Shield, CheckCircle, Star, Globe, Send, Building, MessageSquare, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -427,7 +426,7 @@ const BulkQuote = () => {
                 </div>
                 <div>
                   <p className="font-medium text-charcoal text-sm">Email</p>
-                  <p className="text-charcoal/70 text-xs">bulk@prtraders.com</p>
+                  <p className="text-charcoal/70 text-xs">info@prtraders.shop</p>
                 </div>
                 <div>
                   <p className="font-medium text-charcoal text-sm">Response Time</p>

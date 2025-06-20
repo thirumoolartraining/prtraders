@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Globe, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/20250617_2030_Regal Camphor Logo_simple_compose_01jxz6dtfbek2aat9xwdk710fz.png';
 
@@ -72,15 +72,12 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="text-forest-green flex-shrink-0" size={16} />
-                <a href="mailto:info@prtraders.com" className="text-camphor-white/80 hover:text-camphor-white transition-colors duration-150 text-sm sm:text-base break-all">
-                  info@prtraders.com
+                <a href="mailto:info@prtraders.shop" className="text-camphor-white/80 hover:text-camphor-white transition-colors duration-150 text-sm sm:text-base break-all">
+                  info@prtraders.shop
                 </a>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Globe className="text-forest-green flex-shrink-0" size={16} />
-                <span className="text-camphor-white/80 text-sm sm:text-base">www.prtraders.com</span>
-              </div>
+
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowLeft, Shield, FileText, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -142,7 +141,7 @@ const TermsConditions = () => {
               We're here to ensure your experience remains smooth, fair, and secure.
             </p>
             <div className="space-y-2 text-charcoal/80">
-              <p><strong>Email:</strong> info@prtraders.com</p>
+              <p><strong>Email:</strong> info@prtraders.shop</p>
               <p><strong>Phone:</strong> +91 8122 800658</p>
               <p><strong>Address:</strong> 100B, East Car Street, Palani 624 601, India</p>
             </div>

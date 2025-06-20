@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Clock, Send, User, MessageSquare } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowLeft, MessageCircle, Phone, Mail, MapPin, Clock, Send, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const OnlineSupport = () => {
@@ -149,7 +149,7 @@ const OnlineSupport = () => {
                   <Mail className="text-forest-green mt-1" size={18} />
                   <div>
                     <p className="font-medium text-charcoal">Email Support</p>
-                    <p className="text-charcoal/80">support@prtraders.com</p>
+                    <p className="text-charcoal/80">info@prtraders.shop</p>
                     <p className="text-xs text-charcoal/60">Response within 24 hours</p>
                   </div>
                 </div>

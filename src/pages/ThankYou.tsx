@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -67,11 +66,11 @@ const ThankYou = () => {
                 <span>+91 8122 800658</span>
               </a>
               <a 
-                href="mailto:info@prtraders.com"
+                href="mailto:info@prtraders.shop"
                 className="flex items-center justify-center space-x-2 border-2 border-forest-green text-forest-green px-6 py-3 rounded-full font-medium hover:bg-forest-green hover:text-camphor-white transition-all duration-150"
               >
                 <Mail size={16} />
-                <span>info@prtraders.com</span>
+                <span>info@prtraders.shop</span>
               </a>
             </div>
           </div>
