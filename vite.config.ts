@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: './', // Using relative path for better compatibility
+  base: mode === 'production' ? '/' : '/', // Use absolute paths in production
   plugins: [react()],
   resolve: {
     alias: {

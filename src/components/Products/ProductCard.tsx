@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ShoppingCart, Heart, Star, Info } from 'lucide-react';
 import { Product } from '../../store/useStore';
 import { useStore } from '../../store/useStore';
+import Image from '../UI/Image';
 
 interface ProductCardProps {
   product: Product;
@@ -30,11 +31,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
     >
       {/* Product Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-spiritual-sandy-light">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-700"
-        />
+        <div className="w-full h-full p-4 flex items-center justify-center">
+          <Image
+            src={product.image}
+            alt={product.name}
+            isProductImage={true}
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         
         {/* Purity Badge */}
