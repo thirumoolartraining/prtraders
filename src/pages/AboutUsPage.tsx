@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Home, Heart, Award, Users, MapPin, Phone, Mail, Star } from 'lucide-react';
-import { APP_CONFIG, getWhatsAppUrl, getPhoneUrl, getEmailUrl } from '../config/appConfig';
+import { APP_CONFIG } from '../config/appConfig';
 
 const AboutUsPage: React.FC = () => {
   const [ref, inView] = useInView({
@@ -142,9 +142,9 @@ const AboutUsPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/6191659/pexels-photo-6191659.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/Products/hero-about.png"
                 alt="Traditional spiritual products and temple offerings"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-spiritual-maroon/20 to-transparent rounded-2xl"></div>
             </motion.div>
@@ -224,7 +224,7 @@ const AboutUsPage: React.FC = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
+            {values.map((value) => (
               <motion.div
                 key={value.title}
                 variants={itemVariants}
@@ -289,9 +289,9 @@ const AboutUsPage: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/6000065/pexels-photo-6000065.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/Products/sacred-palani.png"
                 alt="Palani temple and spiritual heritage"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-spiritual-maroon/20 to-transparent rounded-2xl"></div>
             </motion.div>
