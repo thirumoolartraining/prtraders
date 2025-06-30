@@ -20,7 +20,7 @@ export const products: Product[] = [
     name: 'Sandalwood Incense',
     category: 'incense',
     price: 149,
-    image: 'sandalwoord-incense.png',
+    image: 'sandalwood-incense.png',
     description: 'Premium sandalwood incense for spiritual ceremonies and meditation',
     spiritualProperties: ['Spiritual Cleansing', 'Mental Clarity', 'Divine Connection'],
     usage: ['Daily prayers', 'Meditation', 'Temple ceremonies'],
