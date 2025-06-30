@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: '/',
   plugins: [react()],
   resolve: {
@@ -11,29 +11,19 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
-  optimizeDeps: {
-    exclude: ['lucide-react'],
+  define: {
+    'process.env.NODE_ENV': `"${mode}"`,
   },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: true,
+    sourcemap: mode !== 'production',
     emptyOutDir: true,
-    manifest: true,
     rollupOptions: {
       output: {
-        entryFileNames: 'assets/[name]-[hash].js',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: (assetInfo) => {
-          const name = assetInfo.name || 'asset';
-          if (/\.(png|jpe?g|svg|gif|tiff|bmp|ico|webp)$/i.test(name)) {
-            return `assets/images/[name]-[hash][extname]`;
-          }
-          if (/\.(woff|woff2|eot|ttf|otf)$/i.test(name)) {
-            return `assets/fonts/[name]-[hash][extname]`;
-          }
-          return `assets/[name]-[hash][extname]`;
-        }
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash][extname]',
       },
     },
   },
@@ -41,8 +31,9 @@ export default defineConfig({
     port: 3000,
     strictPort: true,
     open: true,
-    headers: {
-      'Content-Type': 'text/javascript',
-    },
   },
-});
+  preview: {
+    port: 3000,
+    strictPort: true,
+  },
+}));
